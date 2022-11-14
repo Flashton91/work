@@ -1,0 +1,30 @@
+1668049590821	geckodriver	INFO	Listening on 127.0.0.1:41407
+1668049591339	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39837" "-no-remote" "-profile" "/tmp/rust_mozprofilexY3VSr"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1668049596421	Marionette	INFO	Marionette enabled
+1668049596453	Marionette	INFO	Listening on port 41377
+WebDriver BiDi listening on ws://127.0.0.1:39837
+1668049597168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexY3VSr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:39837/devtools/browser/a029cd84-abce-4197-8ffe-dc2d06ff06fb
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1668049623159	Marionette	INFO	Stopped listening on port 41377
+1668049846383	geckodriver	INFO	Listening on 127.0.0.1:41883
+1668049846866	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "56367" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebNPKAP"
+1668049864228	geckodriver	INFO	Listening on 127.0.0.1:45625
+1668049864257	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "37093" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileiWqx6c"
+1668050045620	geckodriver	INFO	Listening on 127.0.0.1:42057
+1668050045643	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "40831" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7bs2Vy"
+1668050368375	geckodriver	INFO	Listening on 127.0.0.1:40235
+1668050368408	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "46289" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWd3DmX"
+1668050394134	geckodriver	INFO	Listening on 127.0.0.1:35145
+1668050394159	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "33281" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZP9XiU"
+1668054151094	geckodriver	INFO	Listening on 127.0.0.1:50979
+1668054151137	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "55485" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2UvGaU"
+1668054508894	geckodriver	INFO	Listening on 127.0.0.1:57499
+1668054508913	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "57251" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletg4G7z"
+1668054548289	geckodriver	INFO	Listening on 127.0.0.1:52779
+1668054548314	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "45971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1OjlHZ"
