@@ -22,7 +22,7 @@ def driver(request):
 @pytest.fixture()
 def data(request):
     data.url = 'https://professionalhair.a-local.ru/'
-    data.pause = 20
+    data.pause = 50
     data.email = 'test@test1811.com'
     data.password = 'test1811'
     data.phone = '9093174567'
