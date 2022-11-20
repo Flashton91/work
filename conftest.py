@@ -23,9 +23,8 @@ def driver(request):
 def data(request):
     data.url = 'https://professionalhair.a-local.ru/'
     data.pause = 20
-    data.name = 'Vasiy'
-    data.surname = 'Ivanov'
-    data.email = str(randint(1, 1000)) + 'test@test.com'
-    data.phone = '9093170' + str(randint(1, 10)) + str(randint(1, 1000)) + str(randint(1, 1000))
-    data.comment = 'Тестируем заказ товара'
+    data.email = 'test@test1811.com'
+    data.password = 'test1811'
+    data.phone = '9093174567'
+    data.comment = 'Testing'
     return data
