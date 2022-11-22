@@ -27,4 +27,7 @@ def data(request):
     data.password = 'test1811'
     data.phone = '9093174567'
     data.comment = 'Testing'
+    data.promo_ok = 'promo_lim5963'
+    data.promo_pros = 'promo_pros6949'
+    data.promo_lim = 'promo_lim8506'
     return data

@@ -102,4 +102,81 @@ def test_standart_buy(driver, data):
     print(ok1,ok2,ok3)
     assert(ok1 and ok2 and ok3)
 
+def test_promocode(driver, data):
+    driver.get(data.url + 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
+    driver.implicitly_wait(data.pause)
+    cena = driver.find_element(By.XPATH,"//form[@class ='variants'][1]//span[@class ='cards__item__price cards__item__price--actual']").text
+    chislo = [float(s) for s in re.findall(r'-?\d+\.?\d*', cena)]
+    if chislo[0] > 1000:
+        driver.implicitly_wait(data.pause)
+        driver.find_element(By.XPATH, "//form[@class ='variants'][1]//input[@value ='Добавить в корзину']").click()
+    else:
+        pytest.skip("Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД")
 
+    driver.get(data.url + 'cart')
+    driver.implicitly_wait(data.pause)
+
+    spis_obl = Select(driver.find_element(By.ID, "Region"))
+    spis_obl.select_by_value("000000080")
+    driver.implicitly_wait(data.pause)
+    spis_city = Select(driver.find_element(By.ID, "City"))
+    spis_city.select_by_value("00004")
+    driver.implicitly_wait(data.pause)
+    driver.find_element(By.ID, "del_pvz").click()
+    driver.implicitly_wait(data.pause)
+    spis_pvz = Select(driver.find_element(By.ID, "Delivery"))
+    spis_pvz.select_by_value("dost19759")
+    driver.implicitly_wait(data.pause)
+    driver.find_element(By.XPATH, "//*[ contains (text(), 'получении' ) ]").click()
+    driver.implicitly_wait(data.pause)
+
+    driver.find_element(By.XPATH, "//input[@id ='phone']").send_keys(data.phone)
+    driver.find_element(By.XPATH, "//div[@id ='fields']//textarea[@name ='comment']").send_keys(data.comment)
+    driver.implicitly_wait(data.pause)
+
+    promocode = [data.promo_ok, data.promo_pros, data.promo_lim]
+    message = ['принят', 'закончилось', 'использован']
+    itogo = []
+    dostabka = []
+    koplate = []
+    sdtotal = []
+    alert = []
+    i = 0
+    s = 0
+
+    while i < 3:
+        driver.implicitly_wait(data.pause)
+        driver.find_element(By.XPATH, "// form[@id ='form_cart1'] // input[@class ='promocode-input']").send_keys(promocode[i])
+        driver.implicitly_wait(data.pause)
+        driver.find_element(By.ID, "apply_promocode").click()
+        driver.implicitly_wait(data.pause)
+
+        driver.implicitly_wait(data.pause)
+        itogop = driver.find_element(By.XPATH,"// form[@id ='form_cart1'] // span[@class ='total_price_block'][1] // span[@class ='price']").text
+        itogo.append(itogop)
+
+        driver.implicitly_wait(data.pause)
+        koplatep = driver.find_element(By.XPATH,"// form[@id ='form_cart1'] // span[@class ='total_price_block'][2] // span[@class ='price']").text
+        koplate.append(koplatep)
+
+        driver.implicitly_wait(data.pause)
+        dostabkap = (driver.find_element(By.XPATH, "// div[@id ='delivery_price'] // span[@class ='price']")).text
+        dostabka.append(dostabkap)
+
+        driver.implicitly_wait(data.pause)
+        sdtotalp = (driver.find_element(By.XPATH, "// div[@id ='delivery_total'] // span[@class ='price']")).text
+        sdtotal.append(sdtotalp)
+
+        driver.implicitly_wait(data.pause + 100)
+        driver.find_element(By.ID, "reset_promocode").click()
+        driver.implicitly_wait(data.pause + 50)
+
+        i = i + 1
+
+    print(itogo)
+    print(koplate)
+    print(dostabka)
+    print(sdtotal)
+
+
+    pass
