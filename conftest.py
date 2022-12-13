@@ -33,3 +33,6 @@ def data(request):
     data.promo_proc = 40
     return data
 
+def pytest_runtest_logreport(report):
+    if report.when == 'call' and report.passed:
+        print('so+')
