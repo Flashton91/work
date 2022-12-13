@@ -6,7 +6,7 @@ import pytest
 from random import randint
 import string
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
+from selenium.common.exceptions import NoSuchElementException
 
 @pytest.fixture()
 def driver(request):
@@ -27,7 +27,9 @@ def data(request):
     data.password = 'test1811'
     data.phone = '9093174567'
     data.comment = 'Testing'
-    data.promo_ok = 'promo_lim5963'
+    data.promo_ok = 'promotest1212-40'
     data.promo_pros = 'promo_pros6949'
     data.promo_lim = 'promo_lim8506'
+    data.promo_proc = 40
     return data
+
