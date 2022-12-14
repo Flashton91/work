@@ -7,6 +7,7 @@ from random import randint
 import string
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.common.exceptions import NoSuchElementException
+from datetime import datetime
 
 @pytest.fixture()
 def driver(request):
@@ -33,6 +34,15 @@ def data(request):
     data.promo_proc = 40
     return data
 
-def pytest_runtest_logreport(report):
-    if report.when == 'call' and report.passed:
-        print('so+')
+@pytest.fixture()
+def log(request):
+    log = open('mylog.txt', 'a')
+    print('* Тестируем ', file=log)
+    yield log
+    now = datetime.now()
+    date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
+    print('* Тестируем завершено в ' + date_time, file=log)
+    log.close()
+
+
+
