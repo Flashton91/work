@@ -32,7 +32,8 @@ def data(request):
     data.promo_pros = 'promo_pros6949'
     data.promo_lim = 'promo_lim8506'
     data.promo_proc = 40
-    data.porog = 100000
+    data.promo_biglim = '30GIFIPJ'
+    data.promo_biglim_c = 100000
     return data
 
 @pytest.fixture()
@@ -42,7 +43,7 @@ def log(request):
     yield log
     now = datetime.now()
     date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
-    print('* Тестируем завершено в ' + date_time, file=log)
+    print('* Тестирование завершено в ' + date_time, file=log)
     log.close()
 
 
