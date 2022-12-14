@@ -174,9 +174,11 @@ def test_promocode(driver, data, log):
     try:
         kolstrp = driver.find_element(By.XPATH, "// section[@class ='paginator paginator--top'] // div[@class ='paginator__item'] // div[@class ='pagination'] // a[last()]").text
     except:
+        print('- Добавьте несколько страниц товаров со скидками', file=log)
         pytest.skip("Добавьте несколько страниц товаров со скидками")
     shagstr = round(int(kolstrp) / 5)
     if int(kolstrp) < 5:
+        print('- Добавьте несколько страниц товаров со скидками', file=log)
         pytest.skip("Добавьте несколько страниц товаров со скидками")
     st = 1
     while st <= int(kolstrp):
@@ -304,6 +306,29 @@ def test_bad_promocode(driver, data, log):
         driver.implicitly_wait(data.pause + 200)
         driver.find_element(By.XPATH,"//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
         driver.implicitly_wait(data.pause + 200)
+
+    driver.implicitly_wait(data.pause)
+    driver.get(data.url + 'categories/volosy?hideOutOfStock=show&sort=price_decrease?page=1')
+    driver.implicitly_wait(data.pause)
+
+    cena = driver.find_element(By.XPATH,"//form[@class ='variants'][1]//span[@class ='cards__item__price cards__item__price--actual']").text
+    chislo = [float(s) for s in re.findall(r'-?\d+\.?\d*', cena)]
+
+    if chislo[0] > 1000 and chislo[0] < data.porog:
+        driver.implicitly_wait(data.pause)
+        driver.find_element(By.XPATH, "// div[@class='cards__list variants'][1] // form[@class='variants'][1] // input[@type='submit' and @data-result-text='Добавлено'][1]").click()
+    else:
+        print("- Добавьте в раздел волос что-нибудь лороже 1000, но меньше " + data.porog)
+        pytest.skip("- Добавьте в раздел волос что-нибудь лороже 1000, но меньше " + data.porog)
+
+    driver.get(data.url + 'cart')
+    driver.implicitly_wait(data.pause)
+
+
+
+
+
+
 
 
 

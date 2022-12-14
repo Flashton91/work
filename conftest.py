@@ -32,6 +32,7 @@ def data(request):
     data.promo_pros = 'promo_pros6949'
     data.promo_lim = 'promo_lim8506'
     data.promo_proc = 40
+    data.porog = 100000
     return data
 
 @pytest.fixture()
