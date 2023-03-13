@@ -9,56 +9,18 @@ import pytest
 import re
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+import functions
 
 
-def Nonbanner(driver, data):
-    try:
-        driver.implicitly_wait(data.pause + 50)
-        driver.find_element(By.XPATH, "//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
-        driver.implicitly_wait(data.pause)
-    except NoSuchElementException:
-        driver.get(data.url)
-        driver.implicitly_wait(data.pause + 200)
-        driver.find_element(By.XPATH, "//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
-        driver.implicitly_wait(data.pause + 200)
-    return driver
-
-
-def Vkorzinu(driver, data, razdel):
-    driver.get(data.url + 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
-    driver.implicitly_wait(data.pause)
-    cena = driver.find_element(By.XPATH, "//form[@class ='variants'][1]//span[@class ='cards__item__price cards__item__price--actual']").text
-    chislo = [float(s) for s in re.findall(r'-?\d+\.?\d*', cena)]
-    nazvanie = driver.find_element(By.XPATH, "//form[@class ='variants'][1]//a[@class ='column'][2]").text
-
-    if chislo[0] > 1000:
-        driver.implicitly_wait(data.pause)
-        driver.find_element(By.XPATH, "// div[@class='cards__list variants'][1] // form[@class='variants'][1] // input[@type='submit' and @data-result-text='Добавлено'][1]").click()
-        return chislo, nazvanie
-    else:
-        print('- Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД', file=log)
-        pytest.skip("Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД")
-
-def Vhod(driver, data):
-    driver.get(data.url + 'user/register')
-    driver.implicitly_wait(data.pause)
-    driver.find_element(By.XPATH, "//div[@id ='content']//input[@name ='email']").send_keys(data.email)
-    driver.implicitly_wait(data.pause)
-    driver.find_element(By.XPATH, "//div[@id ='content']//input[@name ='password']").send_keys(data.password)
-    driver.implicitly_wait(data.pause)
-    driver.find_element(By.XPATH, "//div[@id ='content']//input[@name ='login']").click()
-    driver.implicitly_wait(data.pause)
-
-def test_standart_buy(driver, data, log):
+def test_standart_buy(driver, data):
 # Проверяем стандартную покупку - кладём товар в корзину и оформляем заказ
 
     driver.get(data.url)
 
-    Nonbanner(driver, data)
+    functions.Nonbanner(driver, data)
+    functions.Vhod(driver, data)
 
-    Vhod(driver, data)
-
-    chislo, nazvanie = Vkorzinu(driver, data, 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
+    chislo, nazvanie = functions.Vkorzinu(driver, data, 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
 
     driver.get(data.url + 'cart')
     driver.implicitly_wait(data.pause)
