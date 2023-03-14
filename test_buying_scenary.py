@@ -221,16 +221,16 @@ def test_promocode(driver, data, log):
             print('+ Цены рассчитываются правильно - если промо-код даёт скидку больше распродажи, то действует он', file=log)
         c = c+1
     try:
-        driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").send_keys(data.promo_pros)
+        driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).send_keys(data.promo_pros)
         driver.implicitly_wait(data.pause + 50)
-        driver.find_element(By.ID, "apply_promocode").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
     except:
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).click()
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").send_keys(data.promo_pros)
+        driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).send_keys(data.promo_pros)
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.ID, "apply_promocode").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
         driver.implicitly_wait(data.pause + 100)
 
     print(skidprocp)
