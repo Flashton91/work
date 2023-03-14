@@ -10,6 +10,7 @@ import re
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import functions
+import selector
 
 
 def test_standart_buy(driver, data):
@@ -27,53 +28,53 @@ def test_standart_buy(driver, data):
 
     try:
         driver.implicitly_wait(data.pause)
-        spis_obl = Select(driver.find_element(By.ID, "Region"))
+        spis_obl = Select(driver.find_element(By.XPATH, selector.KorzinaS.poleregion))
         driver.implicitly_wait(data.pause)
         spis_obl.select_by_value("000000080")
         driver.implicitly_wait(data.pause)
-        spis_city = Select(driver.find_element(By.ID, "City"))
+        spis_city = Select(driver.find_element(By.XPATH, selector.KorzinaS.polecity))
         driver.implicitly_wait(data.pause)
         spis_city.select_by_value("00004")
         driver.implicitly_wait(data.pause)
-        driver.find_element(By.ID, "del_pvz").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.tabpvz).click()
         driver.implicitly_wait(data.pause)
-        spis_pvz = Select(driver.find_element(By.ID, "Delivery"))
+        spis_pvz = Select(driver.find_element(By.XPATH, selector.KorzinaS.poledellvery))
         driver.implicitly_wait(data.pause)
         spis_pvz.select_by_value("dost19759")
         driver.implicitly_wait(data.pause)
-        driver.find_element(By.XPATH, "//*[ contains (text(), 'получении' ) ]").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.poleoplaty).click()
         driver.implicitly_wait(data.pause)
     except:
         driver.get(data.url + 'cart')
         driver.implicitly_wait(data.pause + 200)
-        driver.find_element(By.ID, "Region").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.poleregion).click()
         driver.implicitly_wait(data.pause + 100)
-        spis_obl = Select(driver.find_element(By.ID, "Region"))
+        spis_obl = Select(driver.find_element(By.XPATH, selector.KorzinaS.poleregion))
         driver.implicitly_wait(data.pause + 100)
         spis_obl.select_by_value("000000080")
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.ID, "City").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.polecity).click()
         driver.implicitly_wait(data.pause + 100)
-        spis_city = Select(driver.find_element(By.ID, "City"))
+        spis_city = Select(driver.find_element(By.XPATH, selector.KorzinaS.polecity))
         driver.implicitly_wait(data.pause + 100)
         spis_city.select_by_value("00004")
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.ID, "del_pvz").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.tabpvz).click()
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.ID, "Delivery").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.poledellvery).click()
         driver.implicitly_wait(data.pause + 100)
-        spis_pvz = Select(driver.find_element(By.ID, "Delivery"))
+        spis_pvz = Select(driver.find_element(By.XPATH, selector.KorzinaS.poledellvery))
         driver.implicitly_wait(data.pause + 100)
         spis_pvz.select_by_value("dost19759")
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.XPATH, "//*[ contains (text(), 'получении' ) ]").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.poleoplaty).click()
         driver.implicitly_wait(data.pause)
 
-    driver.find_element(By.XPATH, "//input[@id ='phone']").send_keys(data.phone)
-    driver.find_element(By.XPATH, "//div[@id ='fields']//textarea[@name ='comment']").send_keys(data.comment)
+    driver.find_element(By.XPATH, selector.KorzinaS.polephone ).send_keys(data.phone)
+    driver.find_element(By.XPATH, selector.KorzinaS.polecomment ).send_keys(data.comment)
     driver.implicitly_wait(data.pause)
 
-    tr = len(driver.find_elements(By.XPATH, "//form [@id ='form_cart1'] //table[@id ='purchases']//tr"))
+    tr = len(driver.find_elements(By.XPATH, selector.KorzinaS.tabletr))
     i=2
     poz = 0
     pchislo = (str('{0:,}'.format(chislo[0]).replace(',', ' '))).rsplit('.', 2)
@@ -86,33 +87,34 @@ def test_standart_buy(driver, data):
         i = i + 1
 
     driver.implicitly_wait(data.pause)
-    totalp = driver.find_element(By.XPATH, "//form [@id ='form_cart1'] // div[@class ='promocode'] // div[@class ='main_promocode main_promocode_total'] // span[@class ='total_price_block'][2] // span[@class ='price']").text
+    totalp = driver.find_element(By.XPATH, selector.KorzinaS.totalprice).text
     totalp = totalp.replace(' ', '')
     total = [float(s) for s in re.findall(r'-?\d+\.?\d*', totalp)]
     total = total[0]
 
     driver.implicitly_wait(data.pause)
-    dostabkap = (driver.find_element(By.XPATH, "// div[@id ='delivery_price'] // span[@class ='price']")).text
+    dostabkap = (driver.find_element(By.XPATH, selector.KorzinaS.dostavkaprice)).text
     dostabka = float(dostabkap)
 
     driver.implicitly_wait(data.pause)
-    sdtotalp = (driver.find_element(By.XPATH, "// div[@id ='delivery_total'] // span[@class ='price']")).text
+    sdtotalp = (driver.find_element(By.XPATH, selector.KorzinaS.stotalprice)).text
     sdtotal = float(sdtotalp)
 
     sotvc = 0
     driver.implicitly_wait(data.pause)
-    if total + dostabka == sdtotal: sotvc = 1
+    if total + dostabka == sdtotal:
+        sotvc = 1
 
     finalcp = (str('{0:,}'.format(sdtotal).replace(',', ' '))).rsplit('.', 2)
     finalc = finalcp[0]
 
-    driver.find_element(By.ID, "new_order").click()
+    driver.find_element(By.XPATH, selector.KorzinaS.buttonzakaza).click()
     driver.implicitly_wait(data.pause + 50)
-    driver.find_element(By.XPATH, "// div[@id ='modalQuestionnaire'] // button[@class ='fancybox-button fancybox-close-small']").click()
+    driver.find_element(By.XPATH, selector.KorzinaS.closepopup).click()
     driver.implicitly_wait(data.pause + 50)
     WebDriverWait(driver, 150).until(lambda driver: 'заказ' in driver.title)
     driver.implicitly_wait(data.pause + 50)
-    spasibo = len(driver.find_elements(By.XPATH, "//*[ contains (text(), 'Спасибо' ) ]"))
+    spasibo = len(driver.find_elements(By.XPATH, selector.KorzinaS.slovospasibo))
     deneg = len(driver.find_elements(By.XPATH, "//*[ contains (text(), '" + finalc + "' ) ]"))
 
     driver.implicitly_wait(data.pause + 50)
