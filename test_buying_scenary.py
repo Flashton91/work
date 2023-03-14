@@ -21,7 +21,7 @@ def test_standart_buy(driver, data):
     functions.Nonbanner(driver, data)
     functions.Vhod(driver, data)
 
-    chislo, nazvanie = functions.Vkorzinu(driver, data, 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
+    chislo, nazvanie, kolstrp = functions.Vkorzinu(driver, data, 'categories/volosy?hideOutOfStock=show&sort=price_decrease', 'y')
 
     driver.get(data.url + 'cart')
     driver.implicitly_wait(data.pause)
@@ -129,39 +129,25 @@ def test_promocode(driver, data, log):
     print('* Работа промокода - добавляются товары, активируется промо-код и проверяется правильность расчёта цен', file=log)
     driver.get(data.url)
 
-    try:
-        driver.implicitly_wait(data.pause + 50)
-        driver.find_element(By.XPATH,"//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
-        driver.implicitly_wait(data.pause)
-    except NoSuchElementException:
-        driver.get(data.url)
-        driver.implicitly_wait(data.pause + 200)
-        driver.find_element(By.XPATH,"//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
-        driver.implicitly_wait(data.pause + 200)
+    functions.Nonbanner(driver, data)
 
-    driver.get(data.url + 'sale?sort=sale&hideOutOfStock=show&page=1')
-    try:
-        kolstrp = driver.find_element(By.XPATH, "// section[@class ='paginator paginator--top'] // div[@class ='paginator__item'] // div[@class ='pagination'] // a[last()]").text
-    except:
-        print('- Добавьте несколько страниц товаров со скидками', file=log)
-        pytest.skip("Добавьте несколько страниц товаров со скидками")
-    shagstr = round(int(kolstrp) / 5)
-    if int(kolstrp) < 5:
-        print('- Добавьте несколько страниц товаров со скидками', file=log)
-        pytest.skip("Добавьте несколько страниц товаров со скидками")
+    chislo, nazvanie, kolstrp = functions.Vkorzinu(driver, data, 'sale?sort=sale&hideOutOfStock=show&page=1', 'n')
+
     st = 1
+    shagstr = round(int(kolstrp) / 5)
     while st <= int(kolstrp):
         if st > 1:
             driver.implicitly_wait(data.pause)
             driver.get(data.url + 'sale?sort=sale&hideOutOfStock=show&page=' + str(st) + '')
             driver.implicitly_wait(data.pause)
-        driver.find_element(By.XPATH, "// div[@class='cards__list variants'][1] // form[@class='variants'][1] // input[@type='submit' and @data-result-text='Добавлено'][1]").click()
+        driver.find_element(By.XPATH, selector.CatalogS.knopkapokupki).click()
         driver.implicitly_wait(data.pause + 50)
         st = st + shagstr
     driver.get(data.url + 'cart')
     driver.implicitly_wait(data.pause)
 
-    strok = len(driver.find_elements(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr"))
+    strok = len(driver.find_elements(By.XPATH, selector.KorzinaS.tabletr ))
+    # stt = "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr"
     s = 1
     skidprocp = []
     cenatovp = []
@@ -188,9 +174,9 @@ def test_promocode(driver, data, log):
 
     try:
         driver.implicitly_wait(data.pause)
-        driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").send_keys(data.promo_ok)
+        driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).send_keys(data.promo_ok)
         driver.implicitly_wait(data.pause + 50)
-        driver.find_element(By.ID, "apply_promocode").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
         driver.implicitly_wait(data.pause + 50)
         ok2[1] = 1
         print('+ Промокод успешно активирован',file=log)
@@ -198,11 +184,11 @@ def test_promocode(driver, data, log):
         driver.implicitly_wait(data.pause + 100)
         driver.find_element(By.ID, "reset_promocode").click()
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.XPATH,"// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").click()
+        driver.find_element(By.XPATH,selector.KorzinaS.polepromocode).click()
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.XPATH,"// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").send_keys(data.promo_ok)
+        driver.find_element(By.XPATH,selector.KorzinaS.polepromocode).send_keys(data.promo_ok)
         driver.implicitly_wait(data.pause + 100)
-        driver.find_element(By.ID, "apply_promocode").click()
+        driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
         driver.implicitly_wait(data.pause + 100)
 
     s2 = 1

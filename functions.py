@@ -25,20 +25,22 @@ def Nonbanner(driver, data):
     return driver
 
 
-def Vkorzinu(driver, data, razdel):
-    driver.get(data.url + 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
+def Vkorzinu(driver, data, razdel, pricestop):
+    driver.get(data.url + razdel)
+    kolstrp = driver.find_element(By.XPATH, "// section[@class ='paginator paginator--top'] // div[@class ='paginator__item'] // div[@class ='pagination'] // a[last()]").text
     driver.implicitly_wait(data.pause)
     cena = driver.find_element(By.XPATH, selector.CatalogS.cennik).text
     chislo = [float(s) for s in re.findall(r'-?\d+\.?\d*', cena)]
     nazvanie = driver.find_element(By.XPATH, selector.CatalogS.nazvanie ).text
 
-    if chislo[0] > 1000:
-        driver.implicitly_wait(data.pause)
-        driver.find_element(By.XPATH, selector.CatalogS.knopkapokupki).click()
-        return chislo, nazvanie
-    else:
-        print('- Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД', file=log)
-        pytest.skip("Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД")
+    if pricestop == 'y':
+        if chislo[0] > 1000:
+            driver.implicitly_wait(data.pause)
+            driver.find_element(By.XPATH, selector.CatalogS.knopkapokupki).click()
+        else:
+            print('- Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД', file=log)
+            pytest.skip("Добавьте в раздел волос что-нибудь дороже 1000 или почините подключение к БД")
+    return chislo, nazvanie, kolstrp
 
 def Vhod(driver, data):
     driver.get(data.url + 'user/register')

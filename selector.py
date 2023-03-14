@@ -26,6 +26,9 @@ class KorzinaS:
 
     slovospasibo = "//*[ contains (text(), 'Спасибо' ) ]"
 
+    polepromocode = "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']"
+    knopkapromocode = "// *[@id ='apply_promocode']"
+
 
 
 class VhodS:
