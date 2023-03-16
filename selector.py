@@ -1,3 +1,4 @@
+#Тут длкаторы, для каждой страницы в своем классе. Только xpath !!!
 class CatalogS:
     zakrivalkapopup = "//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']"
     cennik = "//form[@class ='variants'][1]//span[@class ='cards__item__price cards__item__price--actual']"
@@ -29,7 +30,8 @@ class KorzinaS:
     polepromocode = "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']"
     knopkapromocode = "// *[@id ='apply_promocode']"
 
-
+    sbrospromokida = "// *[@id ='reset_promocode']"
+    polekoplate = "// div[@class='promocode-block'] // span[@class='total_price_block'] [last()] // span[@class='price'] [last()]"
 
 class VhodS:
     inputemail = "//div[@id ='content']//input[@name ='email']"

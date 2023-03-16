@@ -17724,3 +17724,991 @@ TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
 1678816106767	Marionette	INFO	Stopped listening on port 41233
+1678836244138	geckodriver	INFO	Listening on 127.0.0.1:43629
+1678836244758	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57641" "-no-remote" "-profile" "/tmp/rust_mozprofilesH3ghp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678836258538	Marionette	INFO	Marionette enabled
+1678836258614	Marionette	INFO	Listening on port 35137
+WebDriver BiDi listening on ws://127.0.0.1:57641
+1678836260534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesH3ghp/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:57641/devtools/browser/6bb4c577-257c-4398-9e2b-ac2a99593992
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678836343515	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678836384917	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3727: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678836416798	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678836437776	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678836489250	Marionette	INFO	Stopped listening on port 35137
+1678836649366	geckodriver	INFO	Listening on 127.0.0.1:34161
+1678836649435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33321" "-no-remote" "-profile" "/tmp/rust_mozprofilekvprTl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678836659037	Marionette	INFO	Marionette enabled
+1678836659065	Marionette	INFO	Listening on port 42289
+WebDriver BiDi listening on ws://127.0.0.1:33321
+1678836659960	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekvprTl/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:33321/devtools/browser/ea682ec3-35aa-492f-9259-bf0014362a0d
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678836739957	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678836782790	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3727: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678836818249	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678836832002	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: FormAutofillHandler: isRecordCreatable: Country not supported: +7
+1678836844806	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678836856925	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678836860256	Marionette	INFO	Stopped listening on port 42289
+1678837616216	geckodriver	INFO	Listening on 127.0.0.1:51923
+1678837616285	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33377" "-no-remote" "-profile" "/tmp/rust_mozprofileJJvb3S"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678837626278	Marionette	INFO	Marionette enabled
+1678837626313	Marionette	INFO	Listening on port 37613
+WebDriver BiDi listening on ws://127.0.0.1:33377
+1678837627433	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJJvb3S/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:33377/devtools/browser/e6aae625-588d-42c1-863f-b2024abe1bba
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678837690332	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678837712923	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678837752716	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3725: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678837795263	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: FormAutofillHandler: isRecordCreatable: Country not supported: +7
+1678837814097	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678837829663	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678837831194	Marionette	INFO	Stopped listening on port 37613
+1678839811700	geckodriver	INFO	Listening on 127.0.0.1:33189
+1678839811778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45267" "-no-remote" "-profile" "/tmp/rust_mozprofileIXZz0s"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678839818895	Marionette	INFO	Marionette enabled
+1678839818928	Marionette	INFO	Listening on port 35015
+WebDriver BiDi listening on ws://127.0.0.1:45267
+1678839819836	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIXZz0s/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:45267/devtools/browser/ae88cb66-7466-4e38-94d0-b7cb07597769
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678839905975	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678839929039	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678839929836	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678839956229	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678839981772	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678840012740	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678840036216	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: https://www.gstatic.com/recaptcha/releases/MuIyr8Ej74CrXhJDQy37RPBe/recaptcha__en.js, line 828: SecurityError: Permission denied to access property "a-mfyz1lowyq83" on cross-origin object
+JavaScript error: https://professionalhair.a-local.ru/sale?sort=sale&hideOutOfStock=show&page=91 line 1 > injectedScript, line 1: NS_ERROR_UNEXPECTED: 
+1678842172232	Marionette	INFO	Stopped listening on port 35015
+1678843104470	geckodriver	INFO	Listening on 127.0.0.1:43637
+1678843104552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54031" "-no-remote" "-profile" "/tmp/rust_mozprofileZ11HSZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678843115578	Marionette	INFO	Marionette enabled
+1678843115608	Marionette	INFO	Listening on port 38909
+WebDriver BiDi listening on ws://127.0.0.1:54031
+1678843116617	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZ11HSZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54031/devtools/browser/e4dcd67d-d6d4-4d3d-9bf4-0c0ec865e579
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678843203794	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678843229097	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843233839	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843235821	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843238709	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843241417	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843241924	Marionette	INFO	Stopped listening on port 38909
+1678843705511	geckodriver	INFO	Listening on 127.0.0.1:48613
+1678843705568	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44905" "-no-remote" "-profile" "/tmp/rust_mozprofile5UPWpy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678843715896	Marionette	INFO	Marionette enabled
+1678843715934	Marionette	INFO	Listening on port 35265
+WebDriver BiDi listening on ws://127.0.0.1:44905
+1678843716870	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5UPWpy/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:44905/devtools/browser/04695dcf-8688-4d94-9a0b-c4485f9eb86f
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678843800993	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678843822563	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843827544	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843830154	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843833405	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678843835743	Marionette	INFO	Stopped listening on port 35265
+1678844208322	geckodriver	INFO	Listening on 127.0.0.1:49369
+1678844208369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44137" "-no-remote" "-profile" "/tmp/rust_mozprofiledLMclv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678844222728	Marionette	INFO	Marionette enabled
+1678844222759	Marionette	INFO	Listening on port 32885
+WebDriver BiDi listening on ws://127.0.0.1:44137
+1678844223626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledLMclv/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:44137/devtools/browser/df363c22-760b-4ac4-8953-43f7e4e4eb75
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678844304830	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678844332447	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678844336728	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678844344925	Marionette	INFO	Stopped listening on port 32885
+1678844546291	geckodriver	INFO	Listening on 127.0.0.1:51599
+1678844546316	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39281" "-no-remote" "-profile" "/tmp/rust_mozprofilelhvmcn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678844558150	Marionette	INFO	Marionette enabled
+1678844558184	Marionette	INFO	Listening on port 46541
+WebDriver BiDi listening on ws://127.0.0.1:39281
+1678844559495	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelhvmcn/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:39281/devtools/browser/c5aad337-3ebd-41f8-86ce-032277da2f8f
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678844647202	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678844648043	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678844673157	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678844678655	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678844681180	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678844686768	Marionette	INFO	Stopped listening on port 46541
+1678844911794	geckodriver	INFO	Listening on 127.0.0.1:34959
+1678844911868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47199" "-no-remote" "-profile" "/tmp/rust_mozprofile1DbVSo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678844922387	Marionette	INFO	Marionette enabled
+1678844922484	Marionette	INFO	Listening on port 46711
+WebDriver BiDi listening on ws://127.0.0.1:47199
+1678844924689	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1DbVSo/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:47199/devtools/browser/dafdc3c0-d4ab-4763-9471-98b2b521a5b5
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678845012744	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678845035657	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678845044493	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678845047237	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678845050937	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678845054267	Marionette	INFO	Stopped listening on port 46711
+1678977741215	geckodriver	INFO	Listening on 127.0.0.1:41691
+1678977741717	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36173" "-no-remote" "-profile" "/tmp/rust_mozprofile1X5a0J"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678977751321	Marionette	INFO	Marionette enabled
+1678977751354	Marionette	INFO	Listening on port 34093
+WebDriver BiDi listening on ws://127.0.0.1:36173
+1678977752280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1X5a0J/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36173/devtools/browser/1ef816b2-d333-4120-8b0b-8783a8f95281
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678977830493	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678977853458	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678977856915	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678977860240	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678977862495	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678977865300	Marionette	INFO	Stopped listening on port 34093
+1678978180836	geckodriver	INFO	Listening on 127.0.0.1:34409
+1678978180876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56137" "-no-remote" "-profile" "/tmp/rust_mozprofileJBHC64"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678978186817	Marionette	INFO	Marionette enabled
+1678978186846	Marionette	INFO	Listening on port 37077
+WebDriver BiDi listening on ws://127.0.0.1:56137
+1678978187751	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJBHC64/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:56137/devtools/browser/ca2dc2fe-e460-443d-8937-b16850ed8ce0
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678978270170	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678978290617	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978295470	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978297374	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978300495	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978303463	Marionette	INFO	Stopped listening on port 37077
+1678978489640	geckodriver	INFO	Listening on 127.0.0.1:38471
+1678978489669	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54061" "-no-remote" "-profile" "/tmp/rust_mozprofile6Ue9xD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678978497397	Marionette	INFO	Marionette enabled
+1678978497424	Marionette	INFO	Listening on port 43465
+WebDriver BiDi listening on ws://127.0.0.1:54061
+1678978498258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6Ue9xD/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:54061/devtools/browser/7f255675-819d-4886-8c9a-545d69ba05f8
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678978582438	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678978600539	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978605755	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978607437	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978611128	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678978615151	Marionette	INFO	Stopped listening on port 43465
+1678979643448	geckodriver	INFO	Listening on 127.0.0.1:44177
+1678979643477	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40369" "-no-remote" "-profile" "/tmp/rust_mozprofileeCiiBV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678979651896	Marionette	INFO	Marionette enabled
+1678979651926	Marionette	INFO	Listening on port 42605
+WebDriver BiDi listening on ws://127.0.0.1:40369
+1678979652765	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeCiiBV/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:40369/devtools/browser/8e5f5e43-d32b-4130-8b3e-0faf196c3467
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678979708381	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678979735011	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678979753983	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678979761939	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678979770983	Marionette	INFO	Stopped listening on port 42605
+1678980170356	geckodriver	INFO	Listening on 127.0.0.1:49137
+1678980170404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39831" "-no-remote" "-profile" "/tmp/rust_mozprofileVSEAV2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678980176311	Marionette	INFO	Marionette enabled
+1678980176346	Marionette	INFO	Listening on port 33089
+WebDriver BiDi listening on ws://127.0.0.1:39831
+1678980177168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVSEAV2/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:39831/devtools/browser/7341d8ae-2685-4304-83d6-e77d0234738d
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678980263526	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678980264292	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3523: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678980286727	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678980289630	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678980292850	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678980299041	Marionette	INFO	Stopped listening on port 33089
+1678983869998	geckodriver	INFO	Listening on 127.0.0.1:34233
+1678983870047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "34477" "-no-remote" "-profile" "/tmp/rust_mozprofileT2ysjO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678983876590	Marionette	INFO	Marionette enabled
+1678983876626	Marionette	INFO	Listening on port 43773
+WebDriver BiDi listening on ws://127.0.0.1:34477
+1678983877426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileT2ysjO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:34477/devtools/browser/1daf5204-b21d-42ff-803f-bcd4886181f6
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678983957054	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678984001630	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3736: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678984036989	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: FormAutofillHandler: isRecordCreatable: Country not supported: +7
+1678984056222	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678984071397	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678984073053	Marionette	INFO	Stopped listening on port 43773
+1678984077423	geckodriver	INFO	Listening on 127.0.0.1:37141
+1678984077946	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45843" "-no-remote" "-profile" "/tmp/rust_mozprofile2VElOC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678984087109	Marionette	INFO	Marionette enabled
+1678984087205	Marionette	INFO	Listening on port 39707
+WebDriver BiDi listening on ws://127.0.0.1:45843
+1678984090014	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2VElOC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:45843/devtools/browser/57c6dfcb-b824-4627-b532-6361d0d0aa05
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678984176620	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678984207015	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678984234465	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678984258495	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678984281525	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678984307509	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678986445595	Marionette	INFO	Stopped listening on port 39707
+1678986452634	geckodriver	INFO	Listening on 127.0.0.1:35187
+1678986453153	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38563" "-no-remote" "-profile" "/tmp/rust_mozprofileJ8scSs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678986462714	Marionette	INFO	Marionette enabled
+1678986462762	Marionette	INFO	Listening on port 35713
+WebDriver BiDi listening on ws://127.0.0.1:38563
+1678986463748	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJ8scSs/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:38563/devtools/browser/0820e90a-b5d6-4317-a02e-6df91c94b638
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678986521542	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678986548465	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3534: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678986570700	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678986574151	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678986581669	Marionette	INFO	Stopped listening on port 35713
+1678987549146	geckodriver	INFO	Listening on 127.0.0.1:57043
+1678987549231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43515" "-no-remote" "-profile" "/tmp/rust_mozprofile15drFm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678987558591	Marionette	INFO	Marionette enabled
+1678987558710	Marionette	INFO	Listening on port 33351
+WebDriver BiDi listening on ws://127.0.0.1:43515
+1678987559776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile15drFm/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:43515/devtools/browser/7b305bd5-5f7f-4efe-82dc-49da07b8ed0b
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987632876	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678987648032	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678987676448	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678987678055	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3734: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678987714844	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678987726893	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: FormAutofillHandler: isRecordCreatable: Country not supported: +7
+1678987735053	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678987752160	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678987754426	Marionette	INFO	Stopped listening on port 33351
+1678987760215	geckodriver	INFO	Listening on 127.0.0.1:55949
+1678987760737	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56501" "-no-remote" "-profile" "/tmp/rust_mozprofileL5cEft"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678987767094	Marionette	INFO	Marionette enabled
+1678987767132	Marionette	INFO	Listening on port 32913
+WebDriver BiDi listening on ws://127.0.0.1:56501
+1678987767952	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileL5cEft/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:56501/devtools/browser/8cdbccf6-b269-44f0-9bd1-71e4cb2a0bae
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+1678987831805	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987854510	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987880003	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987907956	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987938299	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987966896	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678987988168	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678990125376	Marionette	INFO	Stopped listening on port 32913
+1678990132970	geckodriver	INFO	Listening on 127.0.0.1:35989
+1678990133464	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37541" "-no-remote" "-profile" "/tmp/rust_mozprofileoUJpYf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678990143994	Marionette	INFO	Marionette enabled
+1678990144071	Marionette	INFO	Listening on port 36559
+WebDriver BiDi listening on ws://127.0.0.1:37541
+1678990145988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoUJpYf/search.json.mozlz4", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+DevTools listening on ws://127.0.0.1:37541/devtools/browser/5737f10f-2e6f-4e37-8d9a-9fe61b5e11d0
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://professionalhair.a-local.ru."
+1678990226741	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-10989817/build/release/full-a9ffce0fd63bb5a1e51cf340bee7e3156782068f.js, line 1420: TypeError: e is null
+JavaScript error: https://professionalhair.a-local.ru/cart, line 3532: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1678990247793	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678990251104	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678990254291	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678990256725	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1678990259943	Marionette	INFO	Stopped listening on port 36559

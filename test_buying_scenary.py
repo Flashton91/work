@@ -80,7 +80,7 @@ def test_standart_buy(driver, data):
     pchislo = (str('{0:,}'.format(chislo[0]).replace(',', ' '))).rsplit('.', 2)
     res = pchislo[0]
     while i < tr:
-        text_pos = (driver.find_element(By.XPATH, "//form [@id ='form_cart1'] // table[@id ='purchases'] // tr[" + str(i) + "]")).text
+        text_pos = (driver.find_element(By.XPATH, f"//form [@id ='form_cart1'] // table[@id ='purchases'] // tr[{str(i)}]")).text
         if (nazvanie in text_pos):
 
             poz = 1+poz
@@ -115,18 +115,19 @@ def test_standart_buy(driver, data):
     WebDriverWait(driver, 150).until(lambda driver: 'заказ' in driver.title)
     driver.implicitly_wait(data.pause + 50)
     spasibo = len(driver.find_elements(By.XPATH, selector.KorzinaS.slovospasibo))
-    deneg = len(driver.find_elements(By.XPATH, "//*[ contains (text(), '" + finalc + "' ) ]"))
+    deneg = len(driver.find_elements(By.XPATH, f"//*[ contains (text(), '{finalc}' ) ]"))
 
     driver.implicitly_wait(data.pause + 50)
     print(poz)
 
-    assert poz > 0, 'Товар успешно добавлен в корзину'
-    assert sotvc == 1, 'Итоговая цена и цена доставки в сумме равны финальной цене (внизу страницы)'
-    assert spasibo > 0, 'Оформен заказ и произведен переход на страницу благодарности'
+    assert poz > 0, 'Товар НЕ добавлен в корзину'
+    assert sotvc == 1, 'Итоговая цена и цена доставки в сумме НЕ равны финальной цене (внизу страницы)'
+    assert spasibo > 0, 'НЕ оформен заказ и НЕ произведен переход на страницу благодарности'
 
-def test_promocode(driver, data, log):
+def test_promocode(driver, data):
+# Проверяем работу промокодов и правильность вычисленич скидок
     ok2 = [0, 0, 0]
-    print('* Работа промокода - добавляются товары, активируется промо-код и проверяется правильность расчёта цен', file=log)
+    #Работа промокода - добавляются товары, активируется промо-код и проверяется правильность расчёта цен
     driver.get(data.url)
 
     functions.Nonbanner(driver, data)
@@ -153,19 +154,19 @@ def test_promocode(driver, data, log):
     cenatovp = []
     oldp = []
     while s <= strok:
-        if len(driver.find_elements(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s) + "] / td[@class='price'] // span[@class='red_sale']")) > 0:
-            zs = driver.find_element(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s) + "] / td[@class='price'] // span[@class='red_sale']").text
+        if len(driver.find_elements(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s)}] / td[@class='price'] // span[@class='red_sale']")) > 0:
+            zs = driver.find_element(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s)}] / td[@class='price'] // span[@class='red_sale']").text
             zs = zs.replace(' ', '')
             zs = zs.replace('-', '')
             zs = zs.replace('%', '')
             skidprocp.append(int(zs))
-        if len(driver.find_elements(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s) + "] / td[@class='price'][2]")) > 0:
-            zc = driver.find_element(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s) + "] / td[@class='price'][2]").text
+        if len(driver.find_elements(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s)}] / td[@class='price'][2]")) > 0:
+            zc = driver.find_element(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s)}] / td[@class='price'][2]").text
             zc = zc.replace(' ', '')
             zc = zc.replace('руб', '')
             cenatovp.append(int(zc))
-        if len(driver.find_elements(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s) + "] / td[@class='price'] // span[@class='old_price_cart']")) > 0:
-            zo = driver.find_element(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s) + "] / td[@class='price'] // span[@class='old_price_cart']").text
+        if len(driver.find_elements(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s)}] / td[@class='price'] // span[@class='old_price_cart']")) > 0:
+            zo = driver.find_element(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s)}] / td[@class='price'] // span[@class='old_price_cart']").text
             zo = zo.replace(' ', '')
             zo = zo.replace('руб', '')
             oldp.append(int(zo))
@@ -179,7 +180,7 @@ def test_promocode(driver, data, log):
         driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
         driver.implicitly_wait(data.pause + 50)
         ok2[1] = 1
-        print('+ Промокод успешно активирован',file=log)
+        # Промокод успешно активирован
     except:
         driver.implicitly_wait(data.pause + 100)
         driver.find_element(By.ID, "reset_promocode").click()
@@ -194,8 +195,8 @@ def test_promocode(driver, data, log):
     s2 = 1
     cenatovp2 = []
     while s2 <= strok:
-        if len(driver.find_elements(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s2) + "] / td[@class='price'][2]")) > 0:
-            zc2 = driver.find_element(By.XPATH, "// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[" + str(s2) + "] / td[@class='price'][2]").text
+        if len(driver.find_elements(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s2)}] / td[@class='price'][2]")) > 0:
+            zc2 = driver.find_element(By.XPATH, f"// form[@id='form_cart1'] // table[@id='purchases'] / tbody / tr[{str(s2)}] / td[@class='price'][2]").text
             zc2 = zc2.replace(' ', '')
             zc2 = zc2.replace('руб', '')
             cenatovp2.append(int(zc2))
@@ -217,8 +218,8 @@ def test_promocode(driver, data, log):
             pn2.append(0)
         if pn[c] + pn2[c] == 1:
             ok2[2] = 1
-            print('Скидки работают правильно')
-            print('+ Цены рассчитываются правильно - если промо-код даёт скидку больше распродажи, то действует он', file=log)
+            #Скидки работают правильно
+
         c = c+1
     try:
         driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).send_keys(data.promo_pros)
@@ -233,48 +234,20 @@ def test_promocode(driver, data, log):
         driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
         driver.implicitly_wait(data.pause + 100)
 
-    print(skidprocp)
-    print(cenatovp)
-    print(cenatovp2)
-    print(oldp)
-    print(pn)
-    print(pn2)
-    print(ok2)
-    driver.get(data.url)
-    if (ok2[1] == 1  and ok2[2] == 1):
-        print('+++ Тест на промокод и скидки работает.', file=log)
-    else:
-        print('--- Проблема', file=log)
-    assert (ok2[1] == 1 and ok2[2] == 1)
-
-def test_bad_promocode(driver, data, log):
-    ok3 = [0, 0, 0]
-    print('* Работа промокода - просроченный, использованный, недостаточная сумма', file=log)
     driver.get(data.url)
 
-    try:
-        driver.implicitly_wait(data.pause + 50)
-        driver.find_element(By.XPATH,"//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
-        driver.implicitly_wait(data.pause)
-    except NoSuchElementException:
-        driver.get(data.url)
-        driver.implicitly_wait(data.pause + 200)
-        driver.find_element(By.XPATH,"//div[@class ='popmechanic-js-wrapper'] // div[@class ='popmechanic-close']").click()
-        driver.implicitly_wait(data.pause + 200)
+    assert (ok2[1] == 1 and ok2[2] == 1), 'Промокоды НЕ актиаируются, скидки НЕ рассчитываются правильно'
+
+def test_bad_promocode(driver, data):
+# Работа промокода - просроченный, использованный, недостаточная сумма
+
+    driver.get(data.url)
+
+    functions.Nonbanner(driver, data)
+
+    chislo, nazvanie, kolstrp = functions.Vkorzinu(driver, data, 'categories/volosy?hideOutOfStock=show&sort=price_decrease', 'y')
 
     driver.implicitly_wait(data.pause)
-    driver.get(data.url + 'categories/volosy?hideOutOfStock=show&sort=price_decrease')
-    driver.implicitly_wait(data.pause)
-
-    cena = driver.find_element(By.XPATH,"//form[@class ='variants'][1]//span[@class ='cards__item__price cards__item__price--actual']").text
-    chislo = [float(s) for s in re.findall(r'-?\d+\.?\d*', cena)]
-
-    if chislo[0] > 1000 and chislo[0] < data.promo_biglim_c:
-        driver.implicitly_wait(data.pause)
-        driver.find_element(By.XPATH, "// div[@class='cards__list variants'][1] // form[@class='variants'][1] // input[@type='submit' and @data-result-text='Добавлено'][1]").click()
-    else:
-        print("- Добавьте в раздел волос что-нибудь лороже 1000, но меньше " + data.porog, file=log)
-        pytest.skip("- Добавьте в раздел волос что-нибудь лороже 1000, но меньше " + data.porog)
 
     driver.get(data.url + 'cart')
     driver.implicitly_wait(data.pause)
@@ -287,24 +260,24 @@ def test_bad_promocode(driver, data, log):
     while sm < len(promocode):
         try:
             driver.implicitly_wait(data.pause)
-            driver.find_element(By.ID, "reset_promocode").click()
+            driver.find_element(By.XPATH, selector.KorzinaS.sbrospromokida).click()
             driver.implicitly_wait(data.pause)
-            driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").send_keys(promocode[sm])
+            driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).send_keys(promocode[sm])
             driver.implicitly_wait(data.pause + 50)
-            driver.find_element(By.ID, "apply_promocode").click()
+            driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
         except:
             driver.implicitly_wait(data.pause + 100)
-            driver.find_element(By.ID, "reset_promocode").click()
+            driver.find_element(By.XPATH, selector.KorzinaS.sbrospromokida).click()
             driver.implicitly_wait(data.pause + 100)
-            driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").click()
+            driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).click()
             driver.implicitly_wait(data.pause + 100)
-            driver.find_element(By.XPATH, "// div[@class='promocode-input-block'] // input[@class = 'promocode-input']").send_keys(promocode[sm])
+            driver.find_element(By.XPATH, selector.KorzinaS.polepromocode).send_keys(promocode[sm])
             driver.implicitly_wait(data.pause + 100)
-            driver.find_element(By.ID, "apply_promocode").click()
+            driver.find_element(By.XPATH, selector.KorzinaS.knopkapromocode).click()
             driver.implicitly_wait(data.pause + 100)
 
         driver.implicitly_wait(data.pause + 200)
-        koplatep = driver.find_element(By.XPATH, "// div[@class='promocode-block'] // span[@class='total_price_block'] [last()] // span[@class='price'] [last()]").text
+        koplatep = driver.find_element(By.XPATH, selector.KorzinaS.polekoplate).text
         koplate.append((koplatep))
         driver.implicitly_wait(data.pause + 200)
 
@@ -313,28 +286,6 @@ def test_bad_promocode(driver, data, log):
         sm = sm + 1
 
     print(koplate)
-    print(kolmsg)
 
-    if kolmsg == 3:
-        print('+ Сообщения выводятся правильно - о просроченном промо-коде, об использованном промо-коде, о недостаточной сумме', file=log)
-        ok3[0] = 1
-
-    if koplate[0] == koplate[1] and koplate[1] == koplate[2]:
-        print('+ Если промокод не срабатывает, то и скидки нет', file=log)
-        ok3[1] = 1
-
-    if (ok3[0] == 1  and ok3[1] == 1):
-        print('+++ Тест на проблемные промркоды работаетт.', file=log)
-    else:
-        print('--- Проблема', file=log)
-
-    assert (ok3[0] == 1 and ok3[1] == 1)
-
-
-
-
-
-
-
-
-
+    assert kolmsg == 3
+    assert koplate[0] == koplate[1] and koplate[1] == koplate[2], 'С неправильным промокодом может быть скидка'
